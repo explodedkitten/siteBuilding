@@ -1,14 +1,25 @@
 <!DOCTYPE html>
 <html>
   <style>
-    #center {
-    text-align: center;
+    .blink-bg{
+    	color: #fff;
+    	padding: 10px;
+    	border-radius: 5px;
+    	animation: blinkingBackground 1s infinite;
+      text-align: center;
     }
-  </style>
-  <body bgcolor="snow">
+    @keyframes blinkingBackground{
+    	0%		{ background-color: #10c018;}
+    	25%		{ background-color: #1056c0;}
+    	50%		{ background-color: #ef0a1a;}
+    	75%		{ background-color: #254878;}
+    	100%	{ background-color: #04a1d5;}
+    }
+</style>
+  <body class="blink-bg">
     <br/><br/><br/><br/><br/>
-    <div id ="center">
-      <img src="content/building.gif"> <br/>
+    <div text-align: "right">
+      <img src="content/building.gif" > <br/>
       <h1> Site under construction </h1>
     </div>
   </body>
